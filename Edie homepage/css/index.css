@@ -42,6 +42,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 2%;
+  height:50px;
 }
 
 .navigation .nav-container .logo {
