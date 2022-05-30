@@ -42,7 +42,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 2%;
-  height:50px;
+  height: 50px;
 }
 
 .navigation .nav-container .logo {
@@ -91,6 +91,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .main .hero {
@@ -528,7 +529,7 @@ a {
 
 @media (max-width: 1250px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
   .heading {
     font-size: 32px;
@@ -556,7 +557,7 @@ a {
   }
   a {
     color: #fff;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: bold;
   }
   .navigation {
@@ -568,7 +569,7 @@ a {
   }
   .navigation .nav-container .nav-list .menu {
     display: block;
-    width: 35px;
+    width: 30px;
     margin-top: -.5em;
     cursor: pointer;
   }
@@ -583,23 +584,24 @@ a {
     background: rgba(55, 163, 226, 0.8);
     -webkit-backdrop-filter: blur(1rem);
             backdrop-filter: blur(1rem);
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
-    width: 50vw;
-    height: 100vh;
+    width: 70%;
+    height: 100%;
     padding: 0;
     -webkit-transition: -webkit-transform 1s ease;
     transition: -webkit-transform 1s ease;
     transition: transform 1s ease;
     transition: transform 1s ease, -webkit-transform 1s ease;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     z-index: 4;
+    overflow-x: hidden;
   }
   .navigation .nav-container .nav-list .nav .exit {
     display: block;
-    width: 35px;
+    width: 30px;
     margin-top: .6em;
     margin-left: auto;
     padding-right: 1.5em;
@@ -626,8 +628,8 @@ a {
     background: linear-gradient(-60deg, #828282, #37a3e2, #E0E0E0);
   }
   .navigation .nav-container .nav-list .open_nav {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .main .after-hero .our-works .works-img-container {
     display: -webkit-box;

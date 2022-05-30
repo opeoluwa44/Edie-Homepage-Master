@@ -248,19 +248,17 @@
             }else {
                 nav.classList.add("open_nav")
             }
-            console.log(element)
         })
             
 
         menuBtn.addEventListener("click", ()=>{
             nav.classList.add("open_nav");
-            document.body.classList.add("off-overflow")           
+            document.body.classList.add("off-overflow")
             
         })
         exitBtn.addEventListener("click", ()=>{
             nav.classList.remove("open_nav")
             document.body.classList.remove("off-overflow")
-           
         })
 
         function closeNav(){
